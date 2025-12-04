@@ -13,7 +13,7 @@
 #include "WelcomeWindow.cpp"
 #endif
 
-std::vector<Player> fetchLeaderBoardPlayers()
+std::vector<Player> fetchLeaderBoardPlayers() // Get all the leaderboard player ranks and put them into Player class vectors
 {
     std::fstream leaderBoardStream;
     leaderBoardStream.open("files/leaderboard.txt", std::ios::in | std::ios::out);
@@ -34,7 +34,7 @@ std::vector<Player> fetchLeaderBoardPlayers()
     return players;
 }
 
-std::string textToWriteLeaderboard(std::vector<Player> &players, size_t &playerIndex)
+std::string textToWriteLeaderboard(std::vector<Player> &players, size_t &playerIndex) // Writes out the string print to the leaderboard window
 {
     std::string ranks;
     for (size_t i = 0; i < players.size(); i++)
@@ -73,7 +73,7 @@ std::string textToWriteLeaderboard(std::vector<Player> &players, size_t &playerI
     return ranks;
 }
 
-size_t getPlayerIndex(std::vector<Player> &players, Player &player)
+size_t getPlayerIndex(std::vector<Player> &players, Player &player) // Gets the placing of the new score within the top 5
 {
     bool compByMinutes = false;
     bool compBySeconds = false;
@@ -102,7 +102,7 @@ size_t getPlayerIndex(std::vector<Player> &players, Player &player)
     return players.size();
 }
 
-size_t updatePlayersVector(std::vector<Player> &players, Player &player)
+void updatePlayersVector(std::vector<Player> &players, Player &player) // Update the backend vector of top 5 players
 {
     size_t playerIndex = getPlayerIndex(players, player);
 
@@ -133,14 +133,9 @@ size_t updatePlayersVector(std::vector<Player> &players, Player &player)
 
         players = newPlayers;
     }
-    if (playerIndex < 5)
-    {
-        return playerIndex;
-    }
-    return 0;
 }
 
-void updateLeaderBoard(std::vector<Player> &players)
+void updateLeaderBoard(std::vector<Player> &players) // Will update leaderboard.txt with new top 5 players
 {
     std::ofstream updater("files/leaderboard.txt", std::ios::trunc);
     for (size_t i = 0; i < players.size(); i++)
@@ -170,7 +165,7 @@ void updateLeaderBoard(std::vector<Player> &players)
 }
 
 #ifndef BORK_IT
-void renderLeaderBoard(sf::RenderWindow &gameWindow, std::vector<std::vector<sf::Sprite>> &pauseScreen, bool pause, size_t &playerIndex)
+void renderLeaderBoard(sf::RenderWindow &gameWindow, std::vector<std::vector<sf::Sprite>> &pauseScreen, bool pause, size_t &playerIndex) // Render leaderboard window
 {
     ConfigNames config = readConfig("files/config.cfg");
     sf::Vector2u windowDimensions((config.colCount * 16), (config.rowCount * 16 + 50));

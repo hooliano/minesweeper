@@ -7,7 +7,7 @@
 #include <utility>
 #include "LeaderboardWindow.cpp"
 
-std::vector<sf::Vector2f> createPositions(ConfigNames &config)
+std::vector<sf::Vector2f> createPositions(ConfigNames &config) // Create positions of each button
 {
     float colCount = static_cast<float>(config.colCount);
     float rowCount = static_cast<float>(config.rowCount);
@@ -21,9 +21,9 @@ std::vector<sf::Vector2f> createPositions(ConfigNames &config)
     return positions;
 }
 
-sf::Vector2i individualDigitTexturePos(int &&digit) { return sf::Vector2i(21 * digit, 0); }
+sf::Vector2i individualDigitTexturePos(int &&digit) { return sf::Vector2i(21 * digit, 0); } // How to get the position of each tile on the window
 
-std::vector<sf::Sprite> createSprites(std::vector<sf::Texture> &textures)
+std::vector<sf::Sprite> createSprites(std::vector<sf::Texture> &textures) // Create the sprites and assign them texture and assign them to vector
 {
     std::vector<sf::Sprite> sprites;
 
@@ -36,7 +36,7 @@ std::vector<sf::Sprite> createSprites(std::vector<sf::Texture> &textures)
     return sprites;
 }
 
-void setMines(std::vector<std::vector<Tile>> &board, ConfigNames &config)
+void setMines(std::vector<std::vector<Tile>> &board, ConfigNames &config) // Randomize the mines on the board
 {
     for (size_t i = 0; i < config.numMines; i++)
     {
@@ -60,7 +60,7 @@ void setMines(std::vector<std::vector<Tile>> &board, ConfigNames &config)
     }
 }
 
-void setNearbyNumbers(std::vector<std::vector<Tile>> &board)
+void setNearbyNumbers(std::vector<std::vector<Tile>> &board) // Set in the backend the nearby mines numbers for each tile on board
 {
     for (size_t i = 0; i < board.size(); i++)
     {
@@ -88,7 +88,7 @@ void setNearbyNumbers(std::vector<std::vector<Tile>> &board)
     }
 }
 
-void setSpriteVectorPositions(std::vector<std::vector<sf::Sprite>> &sprites)
+void setSpriteVectorPositions(std::vector<std::vector<sf::Sprite>> &sprites) // Set the position of all the sprite vectors
 {
     for (size_t i = 0; i < sprites.size(); i++)
     {
@@ -102,7 +102,7 @@ void setSpriteVectorPositions(std::vector<std::vector<sf::Sprite>> &sprites)
     }
 }
 
-void setButtonPositions(std::vector<sf::Vector2f> &positions, std::vector<sf::Sprite> &sprites)
+void setButtonPositions(std::vector<sf::Vector2f> &positions, std::vector<sf::Sprite> &sprites) // Place the positions of the buttons
 {
     size_t i = 2;
     for (size_t j = 0; j < positions.size() - 1; j++)
@@ -112,7 +112,7 @@ void setButtonPositions(std::vector<sf::Vector2f> &positions, std::vector<sf::Sp
     }
 }
 
-std::pair<int, int> findTileClicked(sf::Vector2f &mousePos, std::vector<std::vector<sf::Sprite>> &visualBoard)
+std::pair<int, int> findTileClicked(sf::Vector2f &mousePos, std::vector<std::vector<sf::Sprite>> &visualBoard) // Detects the indexes of 2d vector for which tile is pressed
 {
     for (size_t i = 0; i < visualBoard.size(); i++)
     {
@@ -130,7 +130,7 @@ std::pair<int, int> findTileClicked(sf::Vector2f &mousePos, std::vector<std::vec
     return std::make_pair(-1, -1);
 }
 
-int findButtonPressed(sf::Vector2f &mousePos, std::vector<sf::Sprite> &buttonsList)
+int findButtonPressed(sf::Vector2f &mousePos, std::vector<sf::Sprite> &buttonsList) // Find the button pressed in the bottom
 {
     for (size_t i = 0; i < buttonsList.size(); i++)
     {
@@ -144,7 +144,7 @@ int findButtonPressed(sf::Vector2f &mousePos, std::vector<sf::Sprite> &buttonsLi
     return -1;
 }
 
-void setNearbyNumberForTile(std::vector<sf::Texture> &numbersList, Tile &tile, sf::Sprite &boardTile)
+void setNearbyNumberForTile(std::vector<sf::Texture> &numbersList, Tile &tile, sf::Sprite &boardTile) // Set the number for a revealed tile of nearby mines
 {
     size_t numberNearbyMines = tile.getNearbyMines();
 
@@ -179,11 +179,11 @@ void setNearbyNumberForTile(std::vector<sf::Texture> &numbersList, Tile &tile, s
         break;
     }
 }
-void setCounterTexture(std::vector<sf::Texture> &counterDigitsList, int &digit, sf::Sprite &counterSprite)
+void setCounterTexture(std::vector<sf::Texture> &counterDigitsList, int &digit, sf::Sprite &counterSprite) // Set the texture of a counter sprite
 {
     counterSprite.setTexture(counterDigitsList[digit]);
 }
-void revealAllNearbyNone(std::vector<std::vector<Tile>> &board, std::vector<std::vector<sf::Sprite>> &flagsOnBoard, std::vector<std::vector<sf::Sprite>> &visualBoard, std::vector<std::vector<sf::Sprite>> &mineBoard, std::vector<std::vector<sf::Sprite>> &numberNearbyBoard, std::vector<sf::Texture> &numbersList, int i, int j, sf::Texture &revealedTileText, int &numberOfHiddenTiles)
+void revealAllNearbyNone(std::vector<std::vector<Tile>> &board, std::vector<std::vector<sf::Sprite>> &flagsOnBoard, std::vector<std::vector<sf::Sprite>> &visualBoard, std::vector<std::vector<sf::Sprite>> &mineBoard, std::vector<std::vector<sf::Sprite>> &numberNearbyBoard, std::vector<sf::Texture> &numbersList, int i, int j, sf::Texture &revealedTileText, int &numberOfHiddenTiles) // Recursive function to reveal all nearby non-mine neighbors
 {
     for (int k = -1; k <= 1; k++)
     {
@@ -216,7 +216,7 @@ void revealAllNearbyNone(std::vector<std::vector<Tile>> &board, std::vector<std:
     }
 }
 
-void revealAllMines(std::vector<std::vector<Tile>> &board, std::vector<std::vector<sf::Sprite>> &flagsOnBoard, std::vector<std::vector<sf::Sprite>> &visualBoard, std::vector<std::vector<sf::Sprite>> &mineBoard, std::vector<std::vector<sf::Sprite>> &numberNearbyBoard, sf::Texture &revealedTileText, sf::Texture &mineText, sf::Texture &flagText)
+void revealAllMines(std::vector<std::vector<Tile>> &board, std::vector<std::vector<sf::Sprite>> &flagsOnBoard, std::vector<std::vector<sf::Sprite>> &visualBoard, std::vector<std::vector<sf::Sprite>> &mineBoard, std::vector<std::vector<sf::Sprite>> &numberNearbyBoard, sf::Texture &revealedTileText, sf::Texture &mineText, sf::Texture &flagText) // When the game is lost, update board to reveal all mines
 {
     for (size_t i = 0; i < board.size(); i++)
     {
@@ -242,7 +242,7 @@ void revealAllMines(std::vector<std::vector<Tile>> &board, std::vector<std::vect
     }
 }
 
-void flagAllMines(std::vector<std::vector<Tile>> &board, std::vector<std::vector<sf::Sprite>> &flagsOnBoard, sf::Texture &flagText, int &numFlagsLeft)
+void flagAllMines(std::vector<std::vector<Tile>> &board, std::vector<std::vector<sf::Sprite>> &flagsOnBoard, sf::Texture &flagText, int &numFlagsLeft) // When the game is won, put the flags over all mines
 {
     for (size_t i = 0; i < board.size(); i++)
     {
@@ -257,7 +257,7 @@ void flagAllMines(std::vector<std::vector<Tile>> &board, std::vector<std::vector
         }
     }
 }
-void startGame(std::string &name)
+void startGame(std::string &name) // Render game window
 {
     ConfigNames config = readConfig("files/config.cfg");
 
@@ -429,7 +429,8 @@ void startGame(std::string &name)
             setCounterTexture(counterDigitsList, minesLeft, flagsOne);
             std::vector<Player> players = fetchLeaderBoardPlayers();
             Player newPlayer(name, numMinutes, seconds);
-            playerIndex = updatePlayersVector(players, newPlayer);
+            playerIndex = getPlayerIndex(players, newPlayer);
+            updatePlayersVector(players, newPlayer);
             updateLeaderBoard(players);
             renderLeaderBoard(gameWindow, pauseScreen, 0, playerIndex);
             gameOverRegistered = true;
@@ -530,20 +531,20 @@ void startGame(std::string &name)
                                     {
                                         if (board[i][j].getMineStatus())
                                         {
-                                            visualBoard[i][j].setTexture(revealedTileText);
+                                            // visualBoard[i][j].setTexture(revealedTileText);
                                             mineBoard[i][j].setTexture(mineText);
                                             numberNearbyBoard[i][j].setTexture(mineText);
                                             flagsOnBoard[i][j].setTexture(mineText);
                                             board[i][j].changeFlagStatus(false);
                                         }
-                                        else
+                                        /*else
                                         {
                                             visualBoard[i][j].setTexture(revealedTileText);
                                             mineBoard[i][j].setTexture(revealedTileText);
                                             setNearbyNumberForTile(numbersList, board[i][j], flagsOnBoard[i][j]);
                                             setNearbyNumberForTile(numbersList, board[i][j], numberNearbyBoard[i][j]);
                                             board[i][j].changeFlagStatus(false);
-                                        }
+                                        }*/
                                     }
                                 }
                                 numFlagsLeft = config.numMines;

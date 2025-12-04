@@ -7,7 +7,7 @@
 #include <string>
 #include "readConfig.hpp"
 
-void setText(sf::Text &text, float x, float y)
+void setText(sf::Text &text, float x, float y) // Position text
 {
     sf::FloatRect textRect = text.getLocalBounds();
     text.setOrigin({textRect.position.x + textRect.size.x / 2.0f,
@@ -15,7 +15,7 @@ void setText(sf::Text &text, float x, float y)
     text.setPosition(sf::Vector2f(x, y));
 }
 
-sf::String bootWelcomeWindow()
+sf::String bootWelcomeWindow() // Render welcome window
 {
     ConfigNames config = readConfig("files/config.cfg");
     sf::Vector2u windowDimensions((config.colCount * 32), (config.rowCount * 32 + 100));
