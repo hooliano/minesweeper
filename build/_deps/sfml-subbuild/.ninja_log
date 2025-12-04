@@ -1,0 +1,21 @@
+# ninja log v6
+4	127	7863075273369163	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	73634f55de11b0f
+4	127	7863075273369163	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-mkdir	73634f55de11b0f
+128	24366	7863075515733235	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	5f1094acf0c8c728
+128	24366	7863075515733235	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-download	5f1094acf0c8c728
+24367	26345	7863075515909640	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	a8059c088bb879da
+24367	26345	7863075515909640	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-update	a8059c088bb879da
+26346	26439	7863075536531588	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	968d016346c42348
+26346	26439	7863075536531588	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-patch	968d016346c42348
+26440	26540	7863075537548923	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	ea31239f972cccc2
+26440	26540	7863075537548923	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-configure	ea31239f972cccc2
+26540	26639	7863075538526669	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	85101cf17f8e160b
+26540	26639	7863075538526669	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-build	85101cf17f8e160b
+26639	26738	7863075539541319	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	a0b1ff2287c0438f
+26639	26738	7863075539541319	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-install	a0b1ff2287c0438f
+26738	26834	7863075540472800	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	f14d487f8a8cce7a
+26738	26834	7863075540472800	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-test	f14d487f8a8cce7a
+26834	26967	7863075541805169	CMakeFiles/sfml-populate-complete	c79ae8425bbf7fe9
+26834	26967	7863075541805169	sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	c79ae8425bbf7fe9
+26834	26967	7863075541805169	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate-complete	c79ae8425bbf7fe9
+26834	26967	7863075541805169	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/sfml-populate-done	c79ae8425bbf7fe9

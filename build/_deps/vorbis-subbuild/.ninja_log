@@ -1,0 +1,21 @@
+# ninja log v6
+3	156	7863076131708042	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-mkdir	47fe4bed97568833
+3	156	7863076131708042	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-mkdir	47fe4bed97568833
+157	5290	7863076183124710	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-download	ded137b0ac0a2646
+157	5290	7863076183124710	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-download	ded137b0ac0a2646
+5312	5506	7863076183448584	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-update	7e941d697e83152a
+5312	5506	7863076183448584	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-update	7e941d697e83152a
+5506	5608	7863076186327907	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-patch	55c8c4e101f1cfa3
+5506	5608	7863076186327907	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-patch	55c8c4e101f1cfa3
+5608	5719	7863076187376850	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-configure	b467cacab1b936ff
+5608	5719	7863076187376850	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-configure	b467cacab1b936ff
+5719	5797	7863076188147288	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-build	b948b5022259047b
+5719	5797	7863076188147288	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-build	b948b5022259047b
+5797	5888	7863076189024389	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-install	9e7fbce9456fdeff
+5797	5888	7863076189024389	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-install	9e7fbce9456fdeff
+5888	5965	7863076189823093	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-test	c8dde162ceaaf1cc
+5888	5965	7863076189823093	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-test	c8dde162ceaaf1cc
+5965	6073	7863076190986303	CMakeFiles/vorbis-populate-complete	7acbd6a5a44a8827
+5965	6073	7863076190986303	vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-done	7acbd6a5a44a8827
+5965	6073	7863076190986303	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/vorbis-subbuild/CMakeFiles/vorbis-populate-complete	7acbd6a5a44a8827
+5965	6073	7863076190986303	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/vorbis-subbuild/vorbis-populate-prefix/src/vorbis-populate-stamp/vorbis-populate-done	7acbd6a5a44a8827

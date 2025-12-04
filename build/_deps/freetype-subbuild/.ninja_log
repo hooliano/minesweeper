@@ -1,0 +1,21 @@
+# ninja log v6
+3	129	7863075594574416	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-mkdir	539f0e0a9fb2019b
+3	129	7863075594574416	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-mkdir	539f0e0a9fb2019b
+130	18757	7863075780868250	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-download	c1412e6cd61fd876
+130	18757	7863075780868250	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-download	c1412e6cd61fd876
+18760	19247	7863075781000308	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update	7230ce264dc6ae07
+18760	19247	7863075781000308	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-update	7230ce264dc6ae07
+19247	19437	7863075787643302	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-patch	edfbc417a1422851
+19247	19437	7863075787643302	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-patch	edfbc417a1422851
+19437	19640	7863075789630716	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-configure	c1e186e371d8e72c
+19437	19640	7863075789630716	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-configure	c1e186e371d8e72c
+19640	19828	7863075791459398	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-build	160cfe62e9a1f1a3
+19640	19828	7863075791459398	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-build	160cfe62e9a1f1a3
+19829	19973	7863075792922287	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-install	3379ae6a9eb4f8ff
+19829	19973	7863075792922287	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-install	3379ae6a9eb4f8ff
+19973	20066	7863075793872332	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-test	4a96a76f0dca8679
+19973	20066	7863075793872332	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-test	4a96a76f0dca8679
+20066	20351	7863075796787369	CMakeFiles/freetype-populate-complete	3bb879ca37a970f6
+20066	20351	7863075796787369	freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-done	3bb879ca37a970f6
+20066	20351	7863075796787369	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/freetype-subbuild/CMakeFiles/freetype-populate-complete	3bb879ca37a970f6
+20066	20351	7863075796787369	C:/Users/jdper/Documents/GitHubProjects/minesweeper/build/_deps/freetype-subbuild/freetype-populate-prefix/src/freetype-populate-stamp/freetype-populate-done	3bb879ca37a970f6
